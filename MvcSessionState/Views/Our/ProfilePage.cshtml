@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProfilePage</title>
+</head>
+<body>
+   @using (Html.BeginForm()) {
+        <center>
+            <fieldset>
+                <legend>Profile Information</legend>
+                <table>
+                    <tr>
+                        <td>First Name :</td>
+                        <td>@Html.TextBox("fNameTxt")</td>
+                    </tr>
+                    <tr>
+                        <td>Last Name :</td>
+                        <td>@Html.TextBox("lNameTxt")</td>
+                    </tr>
+                    <tr>
+                        <td>Address :</td>
+                        <td>@Html.TextBox("AddressTxt")</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Save" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </center>
+   }
+</body>
+</html>
